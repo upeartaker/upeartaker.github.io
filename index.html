@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		.box{
+			width:500px;
+			height:500px;
+			background: url('./boom.jpg') no-repeat center center ;
+			background-size: 500px 500px;
+			margin:50px auto;
+			position: relative;
+		}
+		.out{
+			width:500px;
+			height:500px;
+			position: absolute;
+			top:0;
+			left:0;
+			z-index: 10;
+			/* background: red;
+			opacity: .3; */
+		}
+		.inn{
+			width:45px;
+			height:45px;
+			background: url('./boom.jpg') no-repeat  ;
+			background-size: 500px 500px;
+			/*float: left;*/
+			position: absolute;
+			/*transform:translateX(0px) translateY(0px);*/
+			transition:all 1s;
+			/*animation:go 5s linear 0s ;*/
+		}
+
+		
+		/* @keyframes go {
+			from{
+				transform:translateX(0px) translateY(0px);
+			}
+			to{
+				transform:translateX(500px) translateY(500px);
+			}
+		} */
+
+		
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+
+	<script src="./jquery-3.3.1.min.js"></script>
+
+	<script>
+		$('.box').click(function(){
+			$('<div class="out"></div>').appendTo($(this));
+			$(this).attr('style','background:white')
+			for( var i = 0 ; i <100 ; i++){
+				var x = Math.floor(Math.random()*1000)-Math.floor(Math.random()*1000);
+				var y = Math.floor(Math.random()*1000)-Math.floor(Math.random()*1000);
+				var le;
+				var to;
+				if(i<10){
+					le = i*45+5;
+					to = 5; 
+				}else if (i>=10 && i<20) {
+					le = (i%10)*45+5;
+					to = 55;
+				}else if (i>=20 && i<30) {
+					le = (i%20)*45+5;
+					to = 105; 
+				}else if (i>=30 && i<40) {
+					le = (i%30)*45+5;
+					to = 155; 
+				}else if (i>=40 && i<50) {
+					le = (i%40)*45+5;
+					to = 205; 
+				}else if (i>=50 && i<60) {
+					le = (i%50)*45+5;
+					to = 255; 
+				}else if (i>=60 && i<70) {
+					le = (i%60)*45+5;
+					to = 305; 
+				}else if (i>=70 && i<80) {
+					le = (i%70)*45+5;
+					to = 355; 
+				}else if (i>=80 && i<90) {
+					le = (i%80)*45+5;
+					to = 405; 
+				}else if (i>=90 && i<100) {
+					le = (i%90)*45+5;
+					to = 450; 
+				}
+
+
+				$('<div class="inn"></div>').appendTo($('.out')).css({
+					left:le,
+					top:to,
+					backgroundPositionX:-le,
+					backgroundPositionY:-to
+				}).animate({
+					left:x,
+					top:y,
+					borderRadius:'50%',
+					opacity:.4
+				},500,'linear',function(){
+					
+					var self = this;
+					setTimeout(function(){
+						self.style.display = 'none'
+					},900)
+				})
+			}
+			
+
+			//动画开始
+			// $('.inn').addClass('animate')
+
+		})
+	</script>
+</body>
+</html>
