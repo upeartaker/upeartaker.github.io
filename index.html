@@ -131,11 +131,10 @@
 				}
 
 
-				$('<div class="inn"></div>').css({
-					background:color? 'url('+color+') no-repeat' : 'url("./boom.jpg") no-repeat '
-				}).appendTo($('.out')).css({
+				$('<div class="inn"></div>').appendTo($('.out')).css({
 					left:le,
 					top:to,
+					backgroundImage:color? 'url('+color+')' : 'url("./boom.jpg")',
 					backgroundPositionX:-le,
 					backgroundPositionY:-to
 				}).animate({
@@ -196,7 +195,7 @@
 			reader.onloadend = function (evt) {
 				//完成上传的时候触发的事件（不管读取是否成功）
 				var dataUrl = reader.result;
-				document.querySelector('.box').style.background = ' url('+dataUrl+') no-repeat center center';
+				document.querySelector('.box').style.backgroundImage = ' url('+dataUrl+')';
 				color = dataUrl
 
 			}
