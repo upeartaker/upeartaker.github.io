@@ -1,20 +1,20 @@
 # Site settings
-title: Vincent Blog
-SEOTitle: 高闻灿的博客 | VG Blog
+title: Upeartaker Blog
+SEOTitle: 长安八月的博客 | August Blog
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
-description: "关于前端er的成长故事 | 高闻灿，Web & Mobile Lover，Front-End Engineer | 这里是 @Vincent高闻灿 的个人博客，与你一起发现更大的世界。"
-keyword: "高闻灿, Vincent Ko, Vinecnt, 高闻灿的博客, Vincent Blog, 博客, 个人网站, 互联网, 前端"
-url: "https://forrany.github.io"              # your host, for absolute URL
+email: 631762631@qq.com
+description: "关于前端er的成长故事 | 长安八月，Web & Mobile Lover，Front-End Engineer | 这里是 @upeartaker长安八月 的个人博客，与你一起发现更大的世界。"
+keyword: "长安八月, upeartaker , upear, 长安八月的博客, upear Blog, 博客, 个人网站, 互联网, 前端"
+url: "https://upeartaker.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
 # SNS settings
 RSS: false
-weibo_username:     gaowencan
-zhihu_username:    vincentko
-github_username:    forrany
+weibo_username:     upeartaker
+zhihu_username:    upeartaker
+github_username:    upeartaker
 #facebook_username:  huxpro
 # linkedin_username:  firstname-lastname-idxxxx
 
@@ -32,7 +32,7 @@ anchorjs: true                          # if you want to customize anchor. check
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
-gems: [jekyll-paginate]
+# gems: [jekyll-paginate]
 
 
 
@@ -48,7 +48,7 @@ kramdown:
 
 
 # Disqus settings
-disqus_username: vincentkoo
+disqus_username: upeartaker
 
 # Netease setttings
 netease_comment: false
