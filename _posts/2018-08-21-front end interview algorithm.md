@@ -3,7 +3,6 @@ layout:     post
 title:      "前端面试&笔试爬坑算法 Algorithm"
 subtitle:   "Front end interview Algorithm..."
 date:       2018-08-21 12:00:00
-author:     "Vinecnt Ko"
 header-img: "img/post-bg-nextgen-web-pwa.jpg"
 header-mask: 0.3
 catalog:    true
@@ -13,19 +12,6 @@ tags:
     - 算法
 ---
 
-终于来了，算法相关的。 其实个人理解，前端岗位对于算法的要求与其他IT岗位相比，是低得多的。 但是小白我经历了如蚂蚁金服、网易这样的大厂教做人之后，还是觉得，对于一些基本算法、思想的掌握还是必须的。 然后，就把自己遇到的、学到的算法相关的再总结一下，方便自己随时备战面试。
-
-系列笔记：
-
-[1.VK的秋招前端奇遇记(一)](https://forrany.github.io/2018/08/10/VK-mistake(1)/)
-
-[2.VK的秋招前端奇遇记(二)](https://forrany.github.io/2018/08/11/VK-mistake(2)/)
-
-[3.VK的秋招前端奇遇记(三)](https://forrany.github.io/2018/08/12/VK-mistake(3)/)
-
-[4.番外篇：前端面试&笔试算法 Algorithm](https://forrany.github.io/2018/08/21/front-end-interview-algorithm/)
-
----
 
 ## 排序
 
